@@ -1,0 +1,15 @@
+name: HopperFilter
+version: '${project.version}'
+main: de.hopperfilter.HopperFilterPlugin
+api-version: '1.21.11'
+description: Filtert, welche Items in Trichter und Kisten duerfen.
+commands:
+  hopperfilter:
+    description: Item-Filter fuer Trichter und Container verwalten
+    usage: /<command> <set|add|remove|clear|info> [Item]
+    aliases: [hf]
+    permission: hopperfilter.use
+permissions:
+  hopperfilter.use:
+    description: Erlaubt das Setzen von Filtern
+    default: op
